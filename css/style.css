@@ -1,0 +1,61 @@
+body {
+    margin: none;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 0.5fr;
+    grid-template-areas: 
+        'hd hd hd'
+        'nv nv nv'
+        's1 s2 s3'
+        'ft ft ft';
+
+}
+
+header {
+    grid-area: hd;
+    background-color: aquamarine;
+
+}
+
+aside {
+    grid-area: as;
+    background-color: blueviolet;
+
+}
+
+nav {
+    grid-area: nv;
+    background-color: beige;
+
+}
+
+
+
+section{
+    background-size: 100% 100%;
+}
+#sn1 {
+    grid-area: s1;
+    background-image: url(../img/animals/lizards.jpeg);
+
+}
+
+#sn2 {
+    grid-area: s2;
+    background-image: url(../img/animals/feeding-time-for-the-panda-550x413.jpeg);
+}
+
+#sn3{
+    grid-area: s3;
+    background-image: url(../img/animals/meerkats-zoo-animals-zoological-garden-preview.jpeg);
+}
+
+footer {
+    grid-area: ft;
+    background-color: brown;
+}
