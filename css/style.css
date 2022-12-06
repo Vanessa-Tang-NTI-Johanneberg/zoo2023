@@ -1,5 +1,6 @@
 body {
     margin: none;
+   
 }
 
 .container{
@@ -7,7 +8,7 @@ body {
     height: 100vh;
     gap: 5px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 5fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr 5fr 0.5fr;
     grid-template-areas: 
         'hd hd hd'
         'nv nv nv'
@@ -18,8 +19,16 @@ body {
 
 header {
     grid-area: hd;
-    background-color: aquamarine;
+    background-color: rgb(248, 255, 253);
+    text-align:center;
+    padding: 10px;
+    justify-content: space-around;
+    display: flex;  
 
+}
+
+a:hover {
+    background-color: rgb(206, 177, 255);
 }
 
 aside {
@@ -57,5 +66,5 @@ section{
 
 footer {
     grid-area: ft;
-    background-color: brown;
+    background-color: blanchedalmond;
 }
