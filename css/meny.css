@@ -18,3 +18,9 @@ header {
 a:hover {
     background-color: rgb(206, 177, 255);
 }
+
+h1 {
+    display: flex;
+    justify-content: center;
+
+}
