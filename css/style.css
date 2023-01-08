@@ -75,7 +75,7 @@ section{
 
 footer {
     grid-area: ft;
-    background-color:beige;
+    background-color: rgb(156, 159, 132);
 }
 
 
@@ -85,14 +85,13 @@ footer {
     gap: 5px;
     padding: 2px 16px;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 0.5fr 5fr 0.5fr 5fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr 4fr 0.5fr ;
     grid-template-areas:
         'hd hd hd hd'
         'nv nv nv nv'
-        'h1 h1 h1 h1'
-        'm1 m2 m3 m4'
-        'h2 h2 h2 h2'
+        'me me me me'
         've ve ve ve'
+        'de de de de'
         'ft ft ft ft' ;
 }
 
@@ -132,40 +131,145 @@ h1{
 }
 
 
-.meat1{
+.meat{
+    display:grid;
+    height:70vh;
+    grid-area:me;
+    margin: 2.5rem;
+    background-color:  rgb(169, 125, 93);
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr ;
+    grid-template-areas:
+        'm1 m2 m3';
+
+}
+
+
+#m1{
     grid-area: m1;
-    background-image: url(../img/mat/meat.png);
-    background-size: contain;
-
-}
-
-.meat2{
-    grid-area: m2;
-    background-image: url(../img/mat/ribs.png);
-    background-size:contain;
-
-}
-
-
-.meat3{
-    grid-area: m3;
     background-image: url(../img/mat/vitmeat.png);
-    background-size: contain;
+    background-size: 100% 100%;
+}
 
+#m2{
+    grid-area: m2;
+    background-image: url(../img/mat/hamb.png);
+    background-size: 100% 100%;
+}
+
+#m3{
+    grid-area: m3;
+    background-image: url(../img/mat/ribs.png);
+    background-size: 100% 100%;
+}
+
+.t1 {
+    font-family: ralway;
+    text-align: center;
+}
+
+.t2 {
+    font-family: ralway;
+    text-align: center;
+}
+
+.t3 {
+    font-family: ralway;
+    text-align: center;
+}
+
+.veg{
+    display:grid;
+    height:70vh;
+    grid-area:ve;
+    margin: 2.5rem;
+    background-color:  rgb(169, 125, 93);
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr ;
+    grid-template-areas:
+        'v1 v2 v3';
+}
+
+#v1{
+    grid-area: v1;
+    background-image: url(../img/mat/lagpizza.png);
+    background-size: 100% 100%;
+}
+
+#v2{
+    grid-area: v2;
+    background-image: url(../img/mat/cpizza.png);
+    background-size: 100% 100%;
+}
+
+#v3{
+    grid-area: v3;
+    background-image: url(../img/mat/tpizza.png);
+    background-size: 100% 100%;
+}
+
+.te1 {
+    font-family: ralway;
+    text-align: center;
+}
+
+.te2 {
+    font-family: ralway;
+    text-align: center;
+}
+
+.te3 {
+    font-family: ralway;
+    text-align: center;
 }
 
 
-.meat4{
-    grid-area: m4;
-    background-image: url(../img/mat/pmeat.png);
-    background-size: contain;
-
+.des{
+    display:grid;
+    height:70vh;
+    grid-area:de;
+    margin: 2.5rem;
+    background-color:  rgb(169, 125, 93);
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr ;
+    grid-template-areas:
+        'd1 d2 d3';
 }
 
+#d1{
+    grid-area: d1;
+    background-image: url(../img/mat/efterätt.jpg);
+    background-size: 100% 100%;
+}
 
+#d2{
+    grid-area: d2;
+    background-image: url(../img/mat/jordv.png);
+    background-size: 100% 100%;
+}
 
-h2{
-    grid-area: h2;
+#d3{
+    grid-area: d3;
+    background-image: url(../img/mat/muffin.png);
+    background-size: 100% 100%;
+}
+
+.tex1 {
+    font-family: ralway;
+    text-align: center;
+}
+
+.tex2 {
+    font-family: ralway;
+    text-align: center;
+}
+
+.tex3 {
+    font-family: ralway;
+    text-align: center;
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -220,10 +324,9 @@ a:hover{
     background-color:  rgb(169, 125, 93);
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr;
+    grid-template-rows:1fr;
     grid-template-areas:
-        'p1 p2 p3'
-        'ft ft ft';
+        'p1 p2 p3';
 }
 
 
@@ -260,8 +363,8 @@ a:hover{
     text-align: center;
 }
 
-
 footer {
     grid-area: ft;
     background-color:beige;
 }
+
