@@ -1,5 +1,5 @@
 body {
-    margin: 0px;
+    margin:0rem;
     background-color:rgb(170, 125, 93);
    
 }
@@ -84,13 +84,15 @@ footer {
     height: 100vh;
     gap: 5px;
     padding: 2px 16px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 0.5fr 5fr 0.5fr 5fr 1fr;
     grid-template-areas:
         'hd hd hd hd'
         'nv nv nv nv'
+        'h1 h1 h1 h1'
         'm1 m2 m3 m4'
-        'v1 v2 v3 v4'
+        'h2 h2 h2 h2'
+        've ve ve ve'
         'ft ft ft ft' ;
 }
 
@@ -124,40 +126,142 @@ a:hover{
 }
 
 
+h1{
+    grid-area: h1;
+    
+}
 
 
-#meat1{
+.meat1{
     grid-area: m1;
-    background-image: url(../img/food/maxresdefault.jpeg);
-    background-color: beige;
+    background-image: url(../img/mat/meat.png);
+    background-size: contain;
 
 }
 
-
-#meat2{
+.meat2{
     grid-area: m2;
-    background-image: url(../img/food/maxresdefault.jpeg);
-    
-
-
-}
-
-
-#meat3{
-
+    background-image: url(../img/mat/ribs.png);
+    background-size:contain;
 
 }
 
 
+.meat3{
+    grid-area: m3;
+    background-image: url(../img/mat/vitmeat.png);
+    background-size: contain;
 
-#meat4{
-
-    
 }
 
-.veg{
-    grid-row: v1;
+
+.meat4{
+    grid-area: m4;
+    background-image: url(../img/mat/pmeat.png);
+    background-size: contain;
+
+}
 
 
 
+h2{
+    grid-area: h2;
+}
+
+/* ------------------------------------------------------------------------------------- */
+.om_oss{
+    display: grid;
+    height: 100vh;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 5fr 1fr;
+    grid-template-rows: 0.5fr 2fr 3fr 0.5fr;
+    grid-template-areas:
+        'hd hd hd hd'
+        'nv nv nv nv'
+        'pr pr pr pr'
+        'ft ft ft ft';
+}
+
+header{
+    grid-area: hd;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(169, 125, 93);
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+nav{
+    grid-area: nv;
+    display: flex;
+    background-color: rgb(169, 125, 93); 
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(32, 22, 22);
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(205, 203, 209);
+}
+
+
+.personer {
+    display:grid;
+    height:70vh;
+    grid-area:pr;
+    margin: 2.5rem;
+    background-color:  rgb(169, 125, 93);
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas:
+        'p1 p2 p3'
+        'ft ft ft';
+}
+
+
+#p1{
+    grid-area: p1;
+    background-image: url(../img/persons/avatar-1b1afc16e9bc79edbb292d32abbc2a86.jpg);
+    background-size: 100% 100%;
+}
+
+#p2{
+    grid-area: p2;
+    background-image: url(../img/persons/avatar-a23eed54c62b7e55dea7606998af0c9a.jpg);
+    background-size: 100% 100%;
+}
+
+#p3{
+    grid-area: p3;
+    background-image: url(../img/persons/avatar-d54eda9dcb9e319bb2b77b6e76cae8fc.jpg);
+    background-size: 100% 100%;
+}
+
+.text1 {
+    font-family: ralway;
+    text-align: center;
+}
+
+.text2 {
+    font-family: ralway;
+    text-align: center;
+}
+
+.text3 {
+    font-family: ralway;
+    text-align: center;
+}
+
+
+footer {
+    grid-area: ft;
+    background-color:beige;
 }

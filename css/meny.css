@@ -82,3 +82,50 @@ a:hover{
 
 
 }
+
+/* i tried*/
+
+
+section#meat{
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+section#veg{
+    background-color: rgb(38, 54, 48);
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+#meat article:nth-child(1) {
+    background-image: url(../img/food/maxresdefault.jpeg);
+    order: 1;
+  }
+  #meat article:nth-child(2) {
+    background-color:lightgreen;
+    order: 5;
+  }
+  #meat article:nth-child(3) {
+    background-color:rgb(91, 91, 74);
+    order: 3;
+  }
+  #meat article:nth-child(4) {
+    background-color:rgb(174, 145, 90);
+    order: 4;
+  }
+  #meat article:nth-child(5) {
+    background-color:rgb(51, 32, 32);
+    order: 2;
+  }
+/* #meat1{
+    grid-area: m1;
+    background-image: url(../img/food/maxresdefault.jpeg);
+    background-color: beige;
+
+} */
+
+
